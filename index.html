@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Crud Vanilla Js</title>
+</head>
+<body>
+    <header>
+        <nav class="nav_bar">
+            <button onclick="mostrar();" class="section_button" id="section_button">+</button>
+          </nav>
+        <section id="principal_section">
+            <div class="div_search">
+                <i onclick="search()" class="bi bi-search"></i>
+                <input class="input_search" id="input_search" oninput="search()" type="text" value="" placeholder="Search">
+                
+            </div>
+           
+            <div class="div_form">
+                <form  id="form_style">
+                    <input class="input" id="img" name="img" type="url" value="" placeholder="Añade url">
+                    <input class="input" id="title" name="title" type="text"  value="" placeholder="Añade título">
+                   
+                    <div class="button_añadir">
+                         <button type="button" class="buttonShowCard" onclick="showCard();">Añadir</button>
+                    </div>
+                </form>
+            </div>
+            <div class="div_button">
+
+                <button onclick="ocultar();" class="section_button" id="section_button">-</button>
+            </div>
+
+            
+        </section>
+        <div id="cards">
+        </div>
+    </header>
+</body>
+</html>
